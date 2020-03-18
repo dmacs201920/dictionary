@@ -1,0 +1,35 @@
+						LINUX PROGRAMMER GUIDE
+					       ========================
+NAME-
+         help file for this dictionary application
+OBJECTIVE-
+        (I)How to search for a word_meaning in a dictionary
+	(II)To understand the different short_forms given in the dictionary
+DESCRIPTION-
+   (I) This manual page document version 2.0 helps the user to search meaning for a given word.Different short_forms and the corresponding meanings are given in the table formed below.
+         	
+		       TABLE NO.1
+       ____________________________________________________
+        | SHORT FORMS    	        MEANING          |
+	| -----------  		        -------          |
+	|      n.           --         	 NOUN            |
+	|      v.	    --		 VERB            |
+	|      adj.         --		 ADJCTIVE	 |	 	 
+	|      adv.	    --		 ADVERB		 |
+	|      abbr.	    --		 ABBREVIATION	 |	
+	|      conj.	    --		 CONJUNCTION	 |	
+	|      prep.	    --		 PREPOSITION	 |	
+	|      pron.	    --		 PRONOUN	 |
+	|      inj.	    --		 INTERJECTION	 |	
+	|					         |
+       ____________________________________________________
+       
+   (II)  You need not worry about the format of the input.Your word to be searched can be in 'lower_case' or 'UPPER_CASE'.
+   (III)When you open the program,you will see the format given in table-1.meanings of the options are given in rightside 
+       	-------------------------------------	    |-------------------------------------------------------------------
+           (1) ENTER THE WORD			    |->ENTER>>>   < the word to be searched >	
+	   (2) DISPLAY THE DICTIONARY		    |->This option will display the complete dictionary(scroll up).
+	   (3) SEARCH HISTORY			    |->This option will display the words that was searched in the past.
+	   (4) HELP				    |->This option will help you to use the dictionary effectively.
+	   (5) EXIT			            |->This option will help you exit from the programme.	
+	-------------------------------------	    |-------------------------------------------------------------------
