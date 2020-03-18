@@ -1,5 +1,19 @@
+<<<<<<< HEAD
 #include"headers.h"
 
+=======
+<<<<<<< HEAD
+#include"headers.h"
+
+=======
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include"headers.h"
+#include<ctype.h>
+#define letter_size 689 
+>>>>>>> 0608454ffbcce6946a226e19022a0f9ac145c2e3
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
 
 char init_case(char*quest)
 {
@@ -46,10 +60,25 @@ hnode*insertEnd(hnode*head,char*word,int x)
     tmp=createnode(word,x);
     if(head==NULL)
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
 	return tmp;
     }
     for(t=head; t->next!=NULL;t=t->next)
     {}
+<<<<<<< HEAD
+=======
+=======
+	head=tmp;
+	return head;
+    }
+    t=head;
+    while(t->next!=NULL)
+	t=t->next;
+>>>>>>> 0608454ffbcce6946a226e19022a0f9ac145c2e3
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
 
     t->next=tmp;
     return head;
@@ -73,18 +102,39 @@ void display(hnode*head)
 	printf("-=-=-=-=THE END-=-=-=-=-\n");
     }
 }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0608454ffbcce6946a226e19022a0f9ac145c2e3
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
 	//search for the word in the linked list, and return its position in the file//
 int find(hnode*head,char*word)
 {
     hnode*t;
     if(head==NULL)
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+//	printf("list is empty, so can't find anything:(\n");
+>>>>>>> 0608454ffbcce6946a226e19022a0f9ac145c2e3
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
 	return -1;
     }
     for(t=head;t!=NULL;t=t->next)
 	if(strcmp(t->word,word)==0)
 	{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+//	    printf("\t\t!!Found %s at the position %d\n",word,t->wpos);
+>>>>>>> 0608454ffbcce6946a226e19022a0f9ac145c2e3
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
 	    return t->wpos;
 	}
 
@@ -100,6 +150,10 @@ void display_meaning(FILE*fp,int wpos)
 
     printf("\n");
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
 
 hnode*initialise_array(char*filename,hnode*letter,FILE*fp)
 {
@@ -111,13 +165,37 @@ hnode*initialise_array(char*filename,hnode*letter,FILE*fp)
     }*/
     char c,word[25];
     int i,wpos,j=0;
+<<<<<<< HEAD
+=======
+=======
+hnode*initialise_array(FILE*fp)
+{
+    char c,word[25];
+    int i,wpos,j=0;
+    hnode*letter;
+
+    letter=malloc(sizeof(hnode)*letter_size);
+    if(!letter)
+    {
+	printf("malloc failed in initialise_array function\n");
+	exit(0);
+    }
+>>>>>>> 0608454ffbcce6946a226e19022a0f9ac145c2e3
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
 
     for(j=0;j<=letter_size;j++)
     {
 	strcpy(letter[j].word,"0");
 	letter[j].next=NULL;
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0608454ffbcce6946a226e19022a0f9ac145c2e3
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
     while((c=fgetc(fp))!=EOF)
     {
 	if(c=='\n')
@@ -142,7 +220,14 @@ hnode*initialise_array(char*filename,hnode*letter,FILE*fp)
 	    }
 	}
     }
+<<<<<<< HEAD
 //    fclose(fp);
+=======
+<<<<<<< HEAD
+//    fclose(fp);
+=======
+>>>>>>> 0608454ffbcce6946a226e19022a0f9ac145c2e3
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
     return letter;
 }
 int search(hnode*letter,char*string)
@@ -159,7 +244,15 @@ int search(hnode*letter,char*string)
 }
 
 
+<<<<<<< HEAD
 void display_array(hnode*letter)
+=======
+<<<<<<< HEAD
+void display_array(hnode*letter)
+=======
+void display_array(hnode*letter,int*n)
+>>>>>>> 0608454ffbcce6946a226e19022a0f9ac145c2e3
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
 {
     for(int j=0;j< letter_size ;j++)
     {
@@ -183,8 +276,17 @@ void suggestion(hnode*letter,char*word)
     if(letter==NULL)
 	printf("list is empty, so can't find anything:(\n");
     
+<<<<<<< HEAD
     printf("\n\t\t\t\t\t\t*********Suggested words are***********"); 
     printf("\n\t\t\t\t\t\t-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n\t");
+=======
+<<<<<<< HEAD
+    printf("\n\t\t\t\t\t\t*********Suggested words are***********"); 
+    printf("\n\t\t\t\t\t\t-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n\t");
+=======
+    printf("\n*********Suggested words are*********** \n\t"); 
+>>>>>>> 0608454ffbcce6946a226e19022a0f9ac145c2e3
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
 
     for(i=0;i<letter_size;i++)
     {
@@ -356,6 +458,10 @@ void view_histfile(void)
     }
     fclose(fp);
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
 void view_helpfile(void)
 {
     FILE*fp;char c;
@@ -435,4 +541,9 @@ void view_dictionary(void)
     }
     fclose(fp3);
 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 0608454ffbcce6946a226e19022a0f9ac145c2e3
+>>>>>>> 56fbda92adf9dbb7571ac4e45ac643748e06b8bf
 
