@@ -1,0 +1,23 @@
+			simpleDictionary
+This is a list of functions and the one who wrote them.
+Function name 						Person who wrote
+snode*createsnode(char* ); 					Bikash
+stack*push(stack*,char* );					Bikash
+void display_stack(stack*);					Bikash
+char*pop(stack*);					        Bikash
+
+int sum_ascii(char*word);					Mangala
+hnode*createnode(char*,int);					Mangala
+hnode*insertEnd(hnode*,char*,int); 				Mangala
+void display_meaning(FILE*,int);				Bikash
+int find(hnode*,char*);						Mangala
+void display_array(hnode*);					Bikash
+hnode*initialise_array(char*,hnode*);				Bikash
+int search(hnode*,char*);					Bikash
+char init_case(char*);						Mangala
+void suggestion(hnode*,char*);					Bikash
+void update_history(char*);					Bikash
+stack*initialise_histack(stack*);				Bikash
+void update_histfile(stack*);					Bikash
+void view_histfile(void); 					Bikash
+stack*insert_bottom(stack*s,char*word); 			Bikash
